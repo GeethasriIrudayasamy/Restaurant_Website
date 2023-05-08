@@ -1,0 +1,98 @@
+.container {
+    max-width: 120rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.section-products {
+    padding: 3rem 0;
+}
+.section-products > h3 {
+    text-align: center;
+    font-size: 1.35rem;
+}
+.heading {
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+.menu__img {
+    justify-self: center;
+    width: 220px;
+    inset: 0;
+    top: 2.5rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: transform 0.4s;
+}
+.product {
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.2rem 1.2rem hsla(151, 93%, 32%, 0.205);
+}
+
+.product-title {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+    text-align: center;
+}
+
+.product-flex {
+    display: flex;
+    align-items: center;
+}
+
+.product-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+box-icon {
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 870px) {
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 870px) and (max-width: 922px) {
+    .grid--4-cols {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 922px) {
+    .grid--4-cols {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid--4-cols {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

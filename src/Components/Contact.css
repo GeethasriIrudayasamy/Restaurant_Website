@@ -1,0 +1,49 @@
+.contact-heading {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+form {
+    width: 20rem;
+    max-width: 90%;
+    margin: 3rem auto 3rem auto;
+}
+
+.form-control div {
+    margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input {
+    display: block;
+    width: 90%;
+    margin-bottom: 0.25rem;
+}
+
+.form-control input {
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 3px;
+    padding: 0.25em 0.5em;
+}
+
+.form-control input:focus {
+    outline-color: #069c54;
+}
+
+.btn {
+    font: inherit;
+    border: 1px solid #069c54;
+    color: #069c54;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0.25em 0.5em;
+    margin-top: 1em;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #069c54;
+    color: white;
+}
