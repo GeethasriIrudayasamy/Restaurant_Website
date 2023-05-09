@@ -29,13 +29,18 @@ ul {
 .nav {
     height: 3rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.nav__item {
+.nav__item,
+.nav__cart {
     margin-bottom: 1rem;
 }
+
+.nav__menu {
+    margin-left: auto;
+}
+
 .nav__link,
 .nav__logo,
 .nav__toggle {
@@ -64,11 +69,41 @@ ul {
 .nav__toggle {
     font-size: 1.3rem;
     cursor: pointer;
+    top: 5px;
+    position: relative;
 }
+
+.nav__cart {
+    margin-left: auto;
+    margin-right: 1.5rem;
+}
+
 .show-menu {
     position: fixed;
     top: 3rem;
     justify-self: center;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 9px;
+    font-size: 0.7rem;
+    background: #069c54;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -9px;
+    position: relative;
+    top: -6px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    top: 5px;
+    position: relative;
+    margin-left: auto;
 }
 
 .nav__list {
@@ -98,6 +133,7 @@ ul {
 
 @media screen and (min-width: 658px) {
     .nav {
+        justify-content: space-between;
         height: cal(3rem+1.5rem);
     }
     .nav__list {
@@ -108,6 +144,11 @@ ul {
         font-size: 1.3rem;
         margin-bottom: 0;
     }
+    .nav__cart {
+        margin-left: 2.5rem;
+        margin-right: 0;
+    }
+
     .nav__toggle {
         display: none;
     }

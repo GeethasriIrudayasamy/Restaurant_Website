@@ -17,6 +17,7 @@ const Navbar = () => {
                 <Link to="/" className="nav__logo">
                     <h1>Tasty</h1>
                 </Link>
+
                 <div
                     className={showMenu ? "nav__menu show-menu" : "nav__menu"}
                     id="nav-menu"
@@ -35,24 +36,45 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className="nav__item">
-                            <Link to="/menu" className={
+                            <Link
+                                to="/menu"
+                                className={
                                     path === "/menu"
                                         ? "nav__link active"
                                         : "nav__link"
-                                }>
+                                }
+                            >
                                 Food Menu
                             </Link>
                         </li>
                         <li className="nav__item">
-                            <Link to="/contact" className={
+                            <Link
+                                to="/contact"
+                                className={
                                     path === "/contact"
                                         ? "nav__link active"
                                         : "nav__link"
-                                }>
+                                }
+                            >
                                 Contact Us
                             </Link>
                         </li>
                     </ul>
+                </div>
+                <div className="nav__cart">
+                    <Link
+                        to="/cart"
+                        className={
+                            path === "/cart"
+                                ? "nav__link cart active"
+                                : "nav__link cart"
+                        }
+                    >
+                        <div className="cart">
+                            <box-icon name="cart" color="#069c54"></box-icon>
+                            <span className="badge">5</span>
+                        </div>
+                    </Link>
                 </div>
                 <div
                     className="nav__toggle"

@@ -10,15 +10,15 @@
 .home__title {
     font-size: 2.25rem;
     color: #069c54;
-    margin: 4rem 2rem 3rem 1rem;
+    margin: 4rem 2rem 3rem 2rem;
 }
 
 .home__subtitle {
     font-size: 1.5rem;
     color: #393939;
     margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 .button {
     display: inline-block;
@@ -29,6 +29,7 @@
     transition: 0.3s;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 1rem;
 }
 .button:hover {
     background-color: #00703a;
@@ -70,6 +71,7 @@
 
     .button {
         display: inline-block;
+        margin-left: 0;
         position: relative;
         left: 50%;
         transform: translateX(-50%);

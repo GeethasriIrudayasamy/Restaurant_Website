@@ -2,7 +2,8 @@ import React, { Fragment } from "react";
 import "./Contact.css";
 
 const Contact = () => {
-    const submitHandler = () => {
+    const submitHandler = (e) => {
+        e.preventDefault();
         alert("No submit functionality is created yet :-)");
     };
     return (
