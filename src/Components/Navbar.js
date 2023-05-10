@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
@@ -6,6 +7,7 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
     const location = useLocation();
     const path = location.pathname;
+    const noOfItemsInCart = useSelector((state) => state.cart.cartList.length);
 
     const menuHandler = () => {
         setShowMenu((prevValue) => !prevValue);
@@ -72,7 +74,7 @@ const Navbar = () => {
                     >
                         <div className="cart">
                             <box-icon name="cart" color="#069c54"></box-icon>
-                            <span className="badge">5</span>
+                            <span className="badge">{noOfItemsInCart}</span>
                         </div>
                     </Link>
                 </div>

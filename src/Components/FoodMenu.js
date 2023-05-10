@@ -1,15 +1,31 @@
 import React from "react";
 import "./FoodMenu.css";
 import MenuData from "../Datas/menu.js";
+import { useDispatch } from "react-redux";
+import { cartActions } from "./Store/cart-slice";
 
 const FoodMenu = () => {
+    const dispatch = useDispatch();
     let content = MenuData.map((item) => (
         <div className="product" key={item.id}>
             <img src={item.image} alt="" className="menu__img" />
             <p className="product-title">{item.name}</p>
             <div className="product-flex">
                 <p className="product-text">Rs. {item.price}</p>
-                <box-icon name="cart" color="#069c54"></box-icon>
+                <span
+                    onClick={() => {
+                        dispatch(
+                            cartActions.addToCart({
+                                id: item.id,
+                                name: item.name,
+                                price: item.price,
+                                image: item.image,
+                            })
+                        );
+                    }}
+                >
+                    <box-icon name="cart" color="#069c54"></box-icon>
+                </span>
             </div>
         </div>
     ));

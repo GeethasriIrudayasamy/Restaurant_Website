@@ -14,7 +14,7 @@ const MenuData = [
         image: img1,
     },
     {
-        name: "Red Sauce Pasta",
+        name: "Pasta",
         id: 2,
         price: 177,
         image: img2,
