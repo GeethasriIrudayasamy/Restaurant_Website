@@ -3,11 +3,11 @@ import Contact from "../Contact";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 
-const ContactPage = () => {
+const ContactPage = (props) => {
     return (
         <Fragment>
             <Navbar />
-            <Contact />
+            <Contact onSubmit={props.onSubmit} />
             <Footer />
         </Fragment>
     );

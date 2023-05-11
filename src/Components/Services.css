@@ -23,10 +23,9 @@
     display: grid;
 }
 ion-icon {
-    color: white;
+    color: #069c54;
     height: 2.2rem;
     width: 2.2rem;
-    background-color: #069c54;
     margin-bottom: 0.6rem;
     padding: 0.6rem;
     border-radius: 50%;

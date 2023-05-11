@@ -20,8 +20,8 @@
     font-size: 1.35rem;
 }
 .heading {
-    justify-self: center;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .menu__img {
@@ -48,6 +48,12 @@
     color: #333;
     font-weight: 700;
     margin-bottom: 0.1rem;
+    text-align: center;
+}
+
+.menu__title {
+    font-size: 2.2rem;
+    color: #069c54;
     text-align: center;
 }
 

@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = (props) => {
     const submitHandler = (e) => {
         e.preventDefault();
-        alert("No submit functionality is created yet :-)");
+        props.onSubmit();
     };
     return (
         <Fragment>

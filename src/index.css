@@ -16,6 +16,14 @@ body {
     box-sizing: border-box;
 }
 
+.loader-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 658px) {
     body {
         font-size: 1rem;

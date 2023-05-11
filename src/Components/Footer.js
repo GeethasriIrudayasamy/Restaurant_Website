@@ -5,6 +5,9 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <footer className="footer section bd-container">
+            <span style={{ color: "#069c54" }}>
+                * Only Contact us link takes you to other component
+            </span>
             <div className="footer__container bd-grid">
                 <div className="footer__content">
                     <h3 className="footer__title">Services</h3>

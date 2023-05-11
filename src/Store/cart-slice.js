@@ -5,7 +5,6 @@ const cartSlice = createSlice({
     initialState: {
         cartList: [],
         totalQuantity: 0,
-        showCart: false,
     },
     reducers: {
         addToCart(state, action) {
@@ -29,7 +28,7 @@ const cartSlice = createSlice({
             }
         },
         removeFromCart(state, action) {
-            const {id }= action.payload;
+            const { id } = action.payload;
 
             const existingItem = state.cartList.find((item) => id === item.id);
             if (existingItem.quantity === 1) {
@@ -42,9 +41,6 @@ const cartSlice = createSlice({
                 existingItem.totalPrice =
                     existingItem.totalPrice - existingItem.price;
             }
-        },
-        setCartVisibility(state, action) {
-            state.showCart = !state.showCart;
         },
     },
 });

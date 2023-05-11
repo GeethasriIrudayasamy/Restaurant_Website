@@ -2,7 +2,7 @@ import React from "react";
 import "./FoodMenu.css";
 import MenuData from "../Datas/menu.js";
 import { useDispatch } from "react-redux";
-import { cartActions } from "./Store/cart-slice";
+import { cartActions } from "../Store/cart-slice";
 
 const FoodMenu = () => {
     const dispatch = useDispatch();
@@ -31,8 +31,7 @@ const FoodMenu = () => {
     ));
     return (
         <section className="section-services" id="services">
-            <h1 className="home__title">A Treat to your taste buds</h1>
-
+            <h1 className="menu__title">A Treat to your taste buds</h1>
             <h1 className="heading">Our Menu</h1>
             <div className="container grid grid--4-cols">{content}</div>
         </section>
